@@ -34,199 +34,210 @@
       border-radius: 2rem;
       box-shadow: 0 35px 80px rgba(0,0,0,0.4);
       overflow: hidden;
+      padding: 2rem;
     }
     .section-card {
       background: rgba(255,255,255,0.97);
       border-radius: 1.2rem;
-      padding: 2rem;
+      padding: 1.5rem;
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    .section-card:hover {
-      transform: translateY(-6px) scale(1.01);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     }
     .section-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #1e3a8a;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #f59e0b;
+      padding-bottom: 0.4rem;
       display: flex;
       align-items: center;
-      gap: 0.8rem;
-      border-bottom: 4px solid #f59e0b;
-      padding-bottom: 0.6rem;
+      gap: 0.5rem;
     }
-    .authors-box {
-      background: rgba(255,255,255,0.25);
-      backdrop-filter: blur(14px);
+    .dashboard {
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
       border-radius: 1rem;
-      padding: 1rem 1.5rem;
-      display: inline-block;
-      font-weight: 600;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
-    .mooc-module {
-      background: rgba(255,255,255,0.9);
-      border-left: 6px solid #2563eb;
-      padding: 1.2rem;
-      border-radius: 0.8rem;
+    .module-card {
+      background: #f9fafb;
+      border: 2px solid #e5e7eb;
+      border-radius: 0.75rem;
+      padding: 1rem;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.95rem;
+      transition: transform 0.2s;
+    }
+    .module-card:hover {
+      transform: translateY(-4px) scale(1.05);
+      background: #eef2ff;
+    }
+    .progress-bar {
+      height: 0.6rem;
+      border-radius: 9999px;
+      background: #e5e7eb;
+      margin-top: 0.4rem;
+    }
+    .progress {
+      height: 100%;
+      border-radius: 9999px;
+      background: #2563eb;
+    }
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #2563eb;
+      color: white;
+      padding: 0.5rem 0.9rem;
+      border-radius: 0.6rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      transition: transform 0.25s ease, background 0.25s ease;
+      text-decoration: none;
+      transition: background 0.3s;
     }
-    .mooc-module:hover {
-      transform: scale(1.07);
-      background: #f3f4f6;
-    }
-    .highlight-section {
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(12px);
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    .btn-link:hover {
+      background: #1e40af;
+      text-decoration: none;
+      color: white;
     }
   </style>
 </head>
 <body class="flex items-center justify-center min-h-screen p-6">
 
-  <div class="poster-container w-full max-w-7xl animate__animated animate__fadeInUp p-6 md:p-12 text-white">
-    
+  <div class="poster-container w-full max-w-7xl text-white">
+
     <!-- Header -->
-    <div class="text-center mb-8">
-      <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6 animate__animated animate__zoomIn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Areandina_logo_vertical_color.png/200px-Areandina_logo_vertical_color.png" 
-             alt="Logo Areandina" class="h-20 bg-white p-2 rounded-xl shadow-md">
-        <div class="text-left">
-          <p class="text-lg font-bold">Fundación Universitaria del Área Andina</p>
-          <p class="text-sm opacity-90">Maestría en Educación para la Innovación Pedagógica</p>
-        </div>
-      </div>
+    <div class="text-center mb-10">
       <h1 class="text-3xl md:text-4xl font-extrabold leading-snug mb-6 animate__animated animate__fadeInDown max-w-5xl mx-auto">
         Implementación de un MOOC para fortalecer las competencias digitales en las prácticas pedagógicas agropecuarias de los docentes de la Institución Educativa Técnica Agropecuaria San Isidro de Boyacá
       </h1>
-      <div class="authors-box mt-6 animate__animated animate__fadeInUp animate__delay-2s">
-        <p><i class="fas fa-users mr-2"></i>Autores: Yuly C. Caro R., Fabiola P. Peñaranda V., Estiben R. Capdevilla P.</p>
-        <p><i class="fas fa-chalkboard-teacher mr-2"></i>Tutora: Carolina Ramírez Sánchez</p>
+      <div class="bg-white/20 backdrop-blur-sm p-4 rounded-xl inline-block">
+        <p><i class="fas fa-users"></i> Autores: Yuly C. Caro R., Fabiola P. Peñaranda V., Estiben R. Capdevilla P.</p>
+        <p><i class="fas fa-chalkboard-teacher"></i> Tutora: Carolina Ramírez Sánchez</p>
       </div>
     </div>
 
-    <!-- Content Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Columna Izquierda -->
+    <!-- Grid principal -->
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Columna 1 -->
       <div class="space-y-6">
-        <!-- Resumen -->
-        <section class="section-card animate__animated animate__fadeInLeft">
+        <section class="section-card">
           <h2 class="section-title"><i class="fas fa-file-alt"></i> Resumen Ejecutivo</h2>
-          <p class="text-gray-700 text-justify">
-            Este trabajo propone el diseño e implementación de un <strong>MOOC</strong> como estrategia innovadora para fortalecer las competencias digitales en docentes rurales de la Institución Educativa San Isidro (Boyacá). La propuesta busca superar brechas digitales con una solución <strong>flexible, contextualizada y de bajo costo</strong>, impactando directamente en las prácticas pedagógicas agropecuarias.
+          <p class="text-gray-700 text-sm text-justify">
+            Este trabajo propone el diseño e implementación de un <strong>MOOC</strong> como estrategia innovadora para fortalecer las competencias digitales en docentes rurales de la Institución Educativa San Isidro (Boyacá). 
+            La propuesta busca superar brechas digitales con una solución <strong>flexible, contextualizada y de bajo costo</strong>, impactando directamente en las prácticas pedagógicas agropecuarias.
           </p>
         </section>
 
-        <!-- Justificación -->
-        <section class="section-card animate__animated animate__fadeInLeft animate__delay-1s">
+        <section class="section-card">
           <h2 class="section-title"><i class="fas fa-clipboard-check"></i> Justificación</h2>
-          <ul class="text-gray-700 space-y-2 list-disc pl-5">
+          <ul class="text-gray-700 text-sm list-disc pl-5 space-y-1">
             <li>Responde a una necesidad real en el contexto rural agropecuario.</li>
             <li>Cierra brechas digitales y educativas entre lo urbano y lo rural.</li>
             <li>Propuesta replicable, sostenible y escalable.</li>
             <li>Aporta directamente al ODS 4: Educación de calidad.</li>
           </ul>
         </section>
-
-        <!-- Marco Teórico -->
-        <section class="section-card animate__animated animate__fadeInLeft animate__delay-2s">
-          <h2 class="section-title"><i class="fas fa-book-open"></i> Marco Teórico</h2>
-          <div class="space-y-4 text-gray-700">
-            <p><i class="fas fa-laptop-code text-blue-600 mr-2"></i><strong>Competencias Digitales:</strong> visión ética, crítica y creativa.</p>
-            <p><i class="fas fa-tractor text-green-600 mr-2"></i><strong>Educación Rural:</strong> diversidad de contextos y desafíos.</p>
-            <p><i class="fas fa-chalkboard text-purple-600 mr-2"></i><strong>TIC:</strong> estrategias de capacitación continua y flexible.</p>
-            <p><i class="fas fa-globe-americas text-indigo-600 mr-2"></i><strong>MOOC:</strong> herramienta inclusiva y transformadora.</p>
-          </div>
-        </section>
       </div>
 
-      <!-- Columna Derecha -->
+      <!-- Columna 2 -->
       <div class="space-y-6">
-        <!-- Objetivos -->
-        <section class="section-card animate__animated animate__fadeInRight">
+        <section class="section-card">
           <h2 class="section-title"><i class="fas fa-bullseye"></i> Objetivos</h2>
-          <p class="font-bold text-gray-800 mb-2">Objetivo General</p>
-          <p class="text-gray-700 mb-4">
+          <p class="font-bold text-gray-800 text-sm mb-2">Objetivo General</p>
+          <p class="text-gray-700 text-sm mb-4">
             Analizar cómo la implementación de un MOOC diseñado para el contexto rural actúa como una estrategia innovadora que fortalece las competencias digitales en las prácticas pedagógicas agropecuarias de los docentes de educación media de la Institución Educativa Técnica Agropecuaria San Isidro de Boyacá.
           </p>
-          <p class="font-bold text-gray-800 mb-2">Objetivos Específicos</p>
-          <ul class="list-decimal pl-6 text-gray-700 space-y-2">
-            <li>Caracterizar las necesidades formativas en competencias digitales de los docentes rurales, que permita identificar los aspectos a reforzar para el diseño del MOOC.</li>
-            <li>Implementar el MOOC para el fortalecimiento de las competencias digitales de los docentes de la institución educativa.</li>
-            <li>Evaluar el impacto del MOOC en el fortalecimiento de las competencias digitales y en la transformación de las prácticas pedagógicas de los docentes participantes.</li>
+          <p class="font-bold text-gray-800 text-sm mb-2">Objetivos Específicos</p>
+          <ul class="list-decimal text-sm pl-6 text-gray-700 space-y-1">
+            <li>Caracterizar las necesidades formativas en competencias digitales de los docentes rurales.</li>
+            <li>Implementar el MOOC para el fortalecimiento de las competencias digitales.</li>
+            <li>Evaluar el impacto del MOOC en la transformación de las prácticas pedagógicas.</li>
           </ul>
         </section>
 
-        <!-- El MOOC -->
-        <section class="section-card animate__animated animate__fadeInRight animate__delay-1s">
+        <section class="section-card">
           <h2 class="section-title"><i class="fas fa-graduation-cap"></i> El MOOC</h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <div class="mooc-module"><i class="fas fa-robot text-blue-600 text-2xl mb-1"></i><p>Módulo 1</p><span>IA</span></div>
-            <div class="mooc-module"><i class="fas fa-video text-red-600 text-2xl mb-1"></i><p>Módulo 2</p><span>Videos</span></div>
-            <div class="mooc-module"><i class="fas fa-podcast text-yellow-600 text-2xl mb-1"></i><p>Módulo 3</p><span>Podcast</span></div>
-            <div class="mooc-module"><i class="fas fa-puzzle-piece text-green-600 text-2xl mb-1"></i><p>Módulo 4</p><span>Genially</span></div>
-            <div class="mooc-module"><i class="fas fa-gamepad text-purple-600 text-2xl mb-1"></i><p>Módulo 5</p><span>Kahoot</span></div>
-            <div class="mooc-module"><i class="fas fa-tasks text-indigo-600 text-2xl mb-1"></i><p>Módulo 6</p><span>Quizizz</span></div>
+          <p class="text-gray-700 text-sm mb-4">
+            El curso se organiza en <strong>6 módulos interactivos</strong> con IA, videos, podcasts, gamificación y recursos digitales aplicados al contexto agropecuario.
+          </p>
+          <div class="dashboard">
+            <h3 class="text-gray-900">Dashboard Simulado</h3>
+            <div class="grid grid-cols-2 gap-3 text-gray-800">
+              <div class="module-card"><i class="fas fa-robot text-blue-600 text-2xl"></i><p>Módulo 1</p><small>IA aplicada</small><div class="progress-bar"><div class="progress w-2/3"></div></div></div>
+              <div class="module-card"><i class="fas fa-video text-red-600 text-2xl"></i><p>Módulo 2</p><small>Videos</small><div class="progress-bar"><div class="progress w-1/2"></div></div></div>
+              <div class="module-card"><i class="fas fa-podcast text-yellow-600 text-2xl"></i><p>Módulo 3</p><small>Podcast</small><div class="progress-bar"><div class="progress w-1/4"></div></div></div>
+              <div class="module-card"><i class="fas fa-puzzle-piece text-green-600 text-2xl"></i><p>Módulo 4</p><small>Genially</small><div class="progress-bar"><div class="progress w-0"></div></div></div>
+              <div class="module-card"><i class="fas fa-gamepad text-purple-600 text-2xl"></i><p>Módulo 5</p><small>Kahoot</small><div class="progress-bar"><div class="progress w-0"></div></div></div>
+              <div class="module-card"><i class="fas fa-tasks text-indigo-600 text-2xl"></i><p>Módulo 6</p><small>Quizizz</small><div class="progress-bar"><div class="progress w-0"></div></div></div>
+            </div>
           </div>
         </section>
+      </div>
 
-        <!-- Evaluación -->
-        <section class="section-card animate__animated animate__fadeInRight animate__delay-2s">
+      <!-- Columna 3 -->
+      <div class="space-y-6">
+        <section class="section-card">
           <h2 class="section-title"><i class="fas fa-chart-bar"></i> Evaluación</h2>
-          <div class="space-y-3 text-gray-700">
-            <p><i class="fas fa-database text-blue-600"></i> Analítica de Plataforma</p>
-            <p><i class="fas fa-book-open text-green-600"></i> Bitácora Reflexiva</p>
-            <p><i class="fas fa-poll text-purple-600"></i> Encuestas Pre y Post</p>
+          <p class="text-gray-700 text-sm mb-3">
+            La evaluación combina <strong>enfoque cuantitativo y cualitativo</strong>, midiendo progreso, participación e impacto. Se aplican tres instrumentos clave:
+          </p>
+          <ul class="list-disc text-sm text-gray-700 pl-5 space-y-1 mb-3">
+            <li>Analítica de plataforma (progreso y tiempos).</li>
+            <li>Bitácoras reflexivas por módulo.</li>
+            <li>Encuestas de percepción pre y post-MOOC.</li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://forms.gle/3re1g8fbkB5LgEu7A" target="_blank" class="btn-link"><i class="fas fa-poll"></i> Pre-MOOC</a>
+            <a href="https://forms.gle/HD5yvuWH1cvk9os99" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 1</a>
+            <a href="https://forms.gle/6b6QKv23Kqug5KPz7" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 2</a>
+            <a href="https://forms.gle/EDRYtmBDjPTe8X9n8" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 3</a>
+            <a href="https://forms.gle/9Ac1NHCPTiv17ahm8" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 4</a>
+            <a href="https://forms.gle/ACawmELqs4qABCHs7" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 5</a>
+            <a href="https://forms.gle/2Gf7qfwG51KiqJvT6" target="_blank" class="btn-link"><i class="fas fa-book"></i> Mód. 6</a>
+            <a href="https://forms.gle/KALaawZNm6wL6ak4A" target="_blank" class="btn-link"><i class="fas fa-poll"></i> Post-MOOC</a>
           </div>
         </section>
-      </div>
-    </div>
 
-    <!-- Bloques finales: Resultados, Impacto, Conclusiones -->
-    <div class="grid md:grid-cols-3 gap-6 mt-10">
-      <div class="highlight-section animate__animated animate__fadeInUp">
-        <h2 class="section-title text-xl"><i class="fas fa-lightbulb"></i> Resultados Esperados</h2>
-        <ul class="text-gray-800 list-disc pl-5 space-y-2 text-sm">
-          <li>Mejora significativa de competencias digitales en docentes rurales.</li>
-          <li>Aplicación directa en prácticas pedagógicas agropecuarias.</li>
-          <li>Creación de una comunidad de aprendizaje sostenible.</li>
-          <li>Modelo replicable en otras instituciones rurales.</li>
-        </ul>
-      </div>
-      <div class="highlight-section animate__animated animate__fadeInUp animate__delay-1s">
-        <h2 class="section-title text-xl"><i class="fas fa-people-carry"></i> Impacto</h2>
-        <ul class="text-gray-800 list-disc pl-5 space-y-2 text-sm">
-          <li>Reducción de brechas digitales en zonas rurales.</li>
-          <li>Contribución directa al ODS 4: Educación de calidad.</li>
-          <li>Fortalecimiento de la equidad educativa en contextos rurales.</li>
-          <li>Transformación positiva de la comunidad educativa.</li>
-        </ul>
-      </div>
-      <div class="highlight-section animate__animated animate__fadeInUp animate__delay-2s">
-        <h2 class="section-title text-xl"><i class="fas fa-check-double"></i> Conclusiones</h2>
-        <ul class="text-gray-800 list-disc pl-5 space-y-2 text-sm">
-          <li>El MOOC es una estrategia innovadora, pertinente y sostenible.</li>
-          <li>Contribuye a mejorar las prácticas docentes en educación agropecuaria.</li>
-          <li>Fomenta la inclusión y la equidad digital en contextos rurales.</li>
-          <li>Representa un modelo escalable para otras comunidades.</li>
-        </ul>
+        <section class="section-card">
+          <h2 class="section-title"><i class="fas fa-lightbulb"></i> Resultados Esperados</h2>
+          <ul class="list-disc text-sm text-gray-700 pl-5 space-y-1">
+            <li>Mejora significativa en competencias digitales.</li>
+            <li>Transformación de prácticas pedagógicas.</li>
+            <li>Comunidad docente rural activa y sostenible.</li>
+            <li>Modelo replicable en otras instituciones.</li>
+          </ul>
+        </section>
+
+        <section class="section-card">
+          <h2 class="section-title"><i class="fas fa-people-carry"></i> Impacto</h2>
+          <ul class="list-disc text-sm text-gray-700 pl-5 space-y-1">
+            <li>Reducción de brechas digitales rurales.</li>
+            <li>Aporte directo al ODS 4: Educación de calidad.</li>
+            <li>Equidad en el acceso a recursos tecnológicos.</li>
+            <li>Transformación de comunidades educativas.</li>
+          </ul>
+        </section>
+
+        <section class="section-card">
+          <h2 class="section-title"><i class="fas fa-check-double"></i> Conclusiones</h2>
+          <ul class="list-disc text-sm text-gray-700 pl-5 space-y-1">
+            <li>El MOOC es innovador, pertinente y sostenible.</li>
+            <li>Mejora prácticas docentes agropecuarias.</li>
+            <li>Promueve inclusión y equidad digital.</li>
+            <li>Escalable a otros contextos rurales.</li>
+          </ul>
+        </section>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer class="text-center mt-10 opacity-80 text-sm">
+    <footer class="text-center mt-12 text-sm opacity-80">
       <p>© 2025 Fundación Universitaria del Área Andina - Maestría en Educación para la Innovación Pedagógica</p>
       <p>Seminario de Innovación III</p>
     </footer>
   </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
