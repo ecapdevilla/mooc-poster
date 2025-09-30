@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Kahoot en la Educación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .kahoot-card {
+            background: linear-gradient(135deg, #4617B4 0%, #7B2CBF 100%);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">MOOC: Aprendizaje Interactivo con Kahoot</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">Transforma tus clases con cuestionarios gamificados y aprendizaje participativo</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 flex items-center"><i class="fas fa-question-circle text-purple-700 mr-3"></i>¿Qué es Kahoot?</h2>
+                <p class="text-gray-600 mb-6">Kahoot es una plataforma de aprendizaje interactivo que permite a los educadores crear cuestionarios, encuestas y juegos educativos personalizados. Lanzada en 2013, se ha convertido en una herramienta popular en aulas de todo el mundo por su capacidad para hacer el aprendizaje divertido y participativo.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-purple-50 p-6 rounded-lg border border-purple-100">
+                        <h3 class="text-xl font-bold text-purple-700 mb-4 flex items-center"><i class="fas fa-check-circle text-purple-600 mr-2"></i>Beneficios de Kahoot en educación</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Aumenta la motivación y participación de los estudiantes</li>
+                            <li>Permite evaluaciones formativas en tiempo real</li>
+                            <li>Facilita la revisión de conceptos clave de forma divertida</li>
+                            <li>Promueve el aprendizaje social y colaborativo</li>
+                            <li>Proporciona datos instantáneos sobre el entendimiento de los estudiantes</li>
+                        </ul>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-4 flex items-center"><i class="fas fa-tools text-indigo-600 mr-2"></i>Usos principales en el aula</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Evaluaciones formativas y sumativas</li>
+                            <li>Repaso de contenidos antes de exámenes</li>
+                            <li>Introducción a nuevos temas</li>
+                            <li>Encuestas de opinión y sondeos</li>
+                            <li>Actividades de team building</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-video text-indigo-600 mr-3"></i>Recurso Clave: Video Tutorial</h2>
+                <p class="text-gray-600 mb-6">Mira este video para conocer las herramientas y funcionalidades de Kahoot.</p>
+                
+                <div class="video-container rounded-lg overflow-hidden mb-8">
+                    <iframe src="https://www.youtube.com/embed/43b3VA3SVdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-list-ul text-purple-700 mr-3"></i>Características Clave de Kahoot</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-bar text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Puntuación en Tiempo Real</h3>
+                        <p class="text-purple-100">Los participantes obtienen puntos basados en rapidez y precisión, creando un ambiente competitivo y motivador.</p>
+                    </div>
+                    
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-th text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Diversidad de Formatos</h3>
+                        <p class="text-purple-100">Ofrece cuestionarios, encuestas, discusiones y juegos de ordenamiento (jumble), adaptándose a diferentes necesidades educativas.</p>
+                    </div>
+                    
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-file-alt text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Informes Detallados</h3>
+                        <p class="text-purple-100">Proporciona estadísticas sobre el rendimiento de los estudiantes, ayudando a evaluar su aprendizaje y necesidades.</p>
+                    </div>
+                    
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-comments text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Retroalimentación Instantánea</h3>
+                        <p class="text-purple-100">Los docentes pueden ver respuestas en tiempo real, permitiendo ajustar la enseñanza según las necesidades detectadas.</p>
+                    </div>
+                    
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-users text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Aprendizaje Social</h3>
+                        <p class="text-purple-100">Fomenta la interacción entre estudiantes, mejorando su capacidad para trabajar en equipo y aprender de sus pares.</p>
+                    </div>
+                    
+                    <div class="kahoot-card text-white p-6 rounded-lg transition-all card-hover">
+                        <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i class="fas fa-mobile-alt text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Accesibilidad</h3>
+                        <p class="text-purple-100">Los estudiantes participan desde sus dispositivos móviles o computadoras, facilitando su involucramiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-lightbulb text-purple-700 mr-3"></i>¿Cómo funciona Kahoot?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Para docentes:</h3>
+                        <ol class="list-decimal pl-5 space-y-4 text-gray-600">
+                            <li>
+                                <span class="font-semibold">Regístrate</span> en <a href="https://kahoot.com" target="_blank" class="text-purple-600 hover:underline">kahoot.com</a> (puedes usar cuenta de Google, Microsoft o Apple)
+                            </li>
+                            <li>
+                                <span class="font-semibold">Crea un nuevo Kahoot</span> seleccionando "Quiz", "Survey", "Discussion" o "Jumble"
+                            </li>
+                            <li>
+                                <span class="font-semibold">Añade preguntas</span> con opciones de respuesta, imágenes y videos si lo deseas
+                            </li>
+                            <li>
+                                <span class="font-semibold">Configura las opciones</span> como tiempo por pregunta, puntos, etc.
+                            </li>
+                            <li>
+                                <span class="font-semibold">Comparte el PIN del juego</span> con los estudiantes para que se unan en kahoot.it
+                            </li>
+                            <li>
+                                <span class="font-semibold">Inicia el juego</span> y monitorea los resultados en tiempo real
+                            </li>
+                            <li>
+                                <span class="font-semibold">Revisa los reportes</span> después del juego para evaluar el aprendizaje
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Para estudiantes:</h3>
+                        <ol class="list-decimal pl-5 space-y-4 text-gray-600">
+                            <li>
+                                <span class="font-semibold">Accede a kahoot.it</span> desde cualquier dispositivo con navegador web
+                            </li>
+                            <li>
+                                <span class="font-semibold">Ingresa el PIN del juego</span> proporcionado por el docente
+                            </li>
+                            <li>
+                                <span class="font-semibold">Escribe un nickname</span> (apropiado para la clase)
+                            </li>
+                            <li>
+                                <span class="font-semibold">Espera a que el docente inicie el juego</span>
+                            </li>
+                            <li>
+                                <span class="font-semibold">Responde las preguntas</span> seleccionando el color/forma correspondiente
+                            </li>
+                            <li>
+                                <span class="font-semibold">Observa tu progreso</span> en el marcador en tiempo real
+                            </li>
+                            <li>
+                                <span class="font-semibold">Aprende de los resultados</span> y las explicaciones después de cada pregunta
+                            </li>
+                        </ol>
+                        <div class="mt-6 bg-purple-50 border border-purple-200 rounded-lg p-4">
+                            <p class="text-purple-700 font-medium">Tip: Los estudiantes no necesitan registrarse para participar, solo el PIN del juego.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-chart-bar text-indigo-600 mr-3"></i>Ejemplo Práctico: Sector Primario</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cómo usar Kahoot para enseñar sobre el sector primario</h3>
+                        <p class="text-gray-600 mb-4">El sector primario incluye actividades como agricultura, ganadería, pesca y silvicultura. Kahoot puede hacer que este tema sea más interactivo y memorable.</p>
+                        
+                        <h4 class="font-bold text-gray-700 mb-2">Ideas para preguntas:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+                            <li>Identificar imágenes de diferentes actividades del sector primario</li>
+                            <li>Preguntas sobre prácticas agrícolas sostenibles</li>
+                            <li>Relacionar productos con su origen (animal, vegetal, mineral)</li>
+                            <li>Verdadero/Falso sobre impacto ambiental</li>
+                        </ul>
+                        
+                        <a href="https://create.kahoot.it/details/bc402a4b-d005-430c-8149-e3f4bf78i1ab" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all mb-4">
+                            Ver ejemplo de Kahoot sobre sector primario
+                        </a>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg border border-green-100">
+                        <h3 class="text-xl font-bold text-green-700 mb-3">Relación con los Objetivos de Desarrollo Sostenible</h3>
+                        <p class="text-gray-600 mb-4">Este tema se conecta con varios ODS que puedes destacar en tu Kahoot:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li><span class="font-semibold">ODS 2: Hambre Cero</span> - Relacionado con la producción agrícola</li>
+                            <li><span class="font-semibold">ODS 12: Producción y Consumo Responsables</span> - Sobre uso sostenible de recursos</li>
+                            <li><span class="font-semibold">ODS 13: Acción por el Clima</span> - Impacto ambiental de las actividades primarias</li>
+                        </ul>
+                        <a href="https://create.kahoot.it/details/45155413-8048-4550-859a-8605d65944a2" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-all mt-4">
+                            Ver Kahoot sobre ODS y sector primario
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="kahoot-card text-white p-6 rounded-lg mb-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Pregunta 3/10</h3>
+                            <p class="text-purple-200">Tema: Sector Primario</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-full px-4 py-2">
+                            <span class="font-bold">00:15</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 mb-6">
+                        <p class="text-lg font-medium mb-4">¿Cuál de estas actividades NO pertenece al sector primario?</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-4 rounded-lg transition-all flex items-center justify-center">
+                                <span class="mr-2 font-bold">A</span> Minería
+                            </button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-4 rounded-lg transition-all flex items-center justify-center">
+                                <span class="mr-2 font-bold">B</span> Pesca
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-4 rounded-lg transition-all flex items-center justify-center">
+                                <span class="mr-2 font-bold">C</span> Manufactura
+                            </button>
+                            <button class="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded-lg transition-all flex items-center justify-center">
+                                <span class="mr-2 font-bold">D</span> Agricultura
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-purple-200 text-sm">
+                        <span>15 jugadores activos</span>
+                        <span>Puntos máx: 785</span>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3">Actividad de aprendizaje extendido</h3>
+                    <p class="text-gray-600 mb-4">Después del Kahoot sobre sector primario:</p>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                        <li>Dividir la clase en grupos y asignar cada ODS relacionado</li>
+                        <li>Cada grupo investiga cómo el sector primario impacta en su ODS asignado</li>
+                        <li>Crear posters digitales con soluciones sostenibles</li>
+                        <li>Presentar los hallazgos a la clase</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-book-open text-purple-700 mr-3"></i>Recursos Adicionales</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-blue-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bancos de Imágenes Gratuitos</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://unsplash.com/s/photos/sustainable-agriculture" target="_blank" class="text-blue-600 hover:underline">Unsplash - Agricultura Sostenible</a></li>
+                            <li><a href="https://www.pexels.com/search/sustainable%20agriculture/" target="_blank" class="text-blue-600 hover:underline">Pexels - Agricultura Sostenible</a></li>
+                        </ul>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-purple-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Referencias Bibliográficas</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>BARRERA, M. (2023). 12 HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL (IA) PARA DISEÑO GRÁFICO.</li>
+                            <li>MOTI. (2023). LAS APLICACIONES DE IA QUE REDEFINEN EL ARTE.</li>
+                            <li>FESPA. (2023). 5 HERRAMIENTAS DE DISEÑO GRÁFICO CON INTELIGENCIA ARTIFICIAL (IA).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-pencil-alt text-purple-700 mr-3"></i>Actividad de Aprendizaje: Bitácora Reflexiva</h2>
+                <p class="text-gray-600 mb-6">Después de explorar las herramientas de Kahoot, por favor completa la siguiente bitácora reflexiva para consolidar tu aprendizaje y compartir tus ideas.</p>
+                
+                <a href="https://forms.gle/ACawmELqs4qABCHs7" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center">
+                    Acceder a la Bitácora Reflexiva 📝
+                </a>
+            </div>
+        </section>
+
+        <section class="py-8 bg-gray-100 mt-16 rounded-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Navegación del Curso</h3>
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center">
+             <a href="geneally2.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    <i class="fas fa-arrow-left mr-2"></i>
+    Módulo Anterior (Genially)
+</a>
+                    <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Regresar a Principal
+</a>
+    <a href="quiziiz.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Próximo Módulo (Quizizz)
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="mb-4">© 2025 MOOC: Kahoot en la Educación</p>
+                <p class="text-gray-400">Este material educativo está diseñado para facilitar la implementación de Kahoot en el proceso de enseñanza-aprendizaje.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

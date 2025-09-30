@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Quizizz en la Educación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .quizizz-card {
+            background: linear-gradient(135deg, #F58529 0%, #DD2A7B 100%);
+            animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.01);
+            }
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-gradient-to-r from-orange-500 to-pink-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">MOOC: Evaluación Interactiva con Quizizz</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">Crea cuestionarios lúdicos y atractivos para evaluar aprendizajes de forma sincrónica o asincrónica</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 flex items-center"><i class="fas fa-question-circle text-pink-500 mr-3"></i>¿Qué es Quizizz?</h2>
+                <p class="text-gray-600 mb-6">Quizizz es una herramienta digital interactiva para crear y realizar cuestionarios en línea de manera lúdica y atractiva. Es de gran ayuda en el ámbito educativo para evaluar conocimientos en tiempo real o de forma asincrónica, accesible desde cualquier dispositivo.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-100">
+                        <h3 class="text-xl font-bold text-orange-700 mb-4 flex items-center"><i class="fas fa-check-circle text-orange-500 mr-2"></i>Beneficios de Quizizz en educación</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Evaluaciones formativas en tiempo real o asincrónicas</li>
+                            <li>Interfaz lúdica que aumenta el engagement estudiantil</li>
+                            <li>Reportes automáticos de desempeño por estudiante</li>
+                            <li>Biblioteca con miles de cuestionarios ya creados</li>
+                            <li>Funciona en cualquier dispositivo con navegador</li>
+                        </ul>
+                    </div>
+                    <div class="bg-pink-50 p-6 rounded-lg border border-pink-100">
+                        <h3 class="text-xl font-bold text-pink-700 mb-4 flex items-center"><i class="fas fa-sync-alt text-pink-500 mr-2"></i>Diferencias con Kahoot</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Los estudiantes pueden completar el quiz a su propio ritmo</li>
+                            <li>No requiere que todos estén conectados al mismo tiempo</li>
+                            <li>Memes personalizados para retroalimentación</li>
+                            <li>Opción de asignar como tarea con fecha límite</li>
+                            <li>Mayor variedad de tipos de preguntas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-video text-orange-500 mr-3"></i>Recurso Clave: Video Tutorial</h2>
+                <p class="text-gray-600 mb-6">Aprende a crear y gestionar cuestionarios interactivos con Quizizz a través de este video tutorial.</p>
+                
+                <div class="video-container rounded-lg overflow-hidden mb-8">
+                    <iframe src="https://www.youtube.com/embed/74V2cbscymg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-list-ol text-pink-500 mr-3"></i>Guía paso a paso para crear cuestionarios en Quizizz</h2>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-user-plus"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Registrarse</h3>
+                            <p class="text-gray-600 mb-2">Abrir una cuenta en la plataforma usando un email (preferiblemente Google). Una vez registrado obtendrás usuario y clave para ingresar.</p>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-700">Tip: Puedes registrarte como profesor o estudiante, pero para crear cuestionarios necesitas una cuenta de profesor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-id-card"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Seleccionar rol</h3>
+                            <p class="text-gray-600">Es importante seleccionar el rol de PROFESOR al registrarte para tener acceso a todas las funciones de creación de cuestionarios.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-pen-nib"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Planificar evaluación</h3>
+                            <p class="text-gray-600">Según el tema que deseas evaluar, prepara las preguntas y define la estructura metodológica que vas a aplicar (selección múltiple, preguntas abiertas, apareamiento, etc.).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-cogs"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Escoger plantilla</h3>
+                            <p class="text-gray-600 mb-2">Quizizz ofrece miles de cuestionarios ya elaborados que puedes buscar por área de interés y adaptar a tus necesidades, o puedes crear uno desde cero.</p>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-700">Tip: Usa filtros por nivel educativo y tema para encontrar recursos más relevantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-pencil-alt"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Crear cuestionario</h3>
+                            <p class="text-gray-600">Edita el contenido seleccionado ajustándolo a tus necesidades. Puedes añadir diferentes tipos de preguntas: selección múltiple, pregunta abierta, dibujos, apareamiento, etc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 mb-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-save"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Guardar</h3>
+                            <p class="text-gray-600">En la esquina superior derecha, haz clic en "Salvar pregunta" para guardar tu progreso. Puedes previsualizar con el icono "Revisar" y hacer ajustes si es necesario.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border-l-4 border-orange-500 shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1"><i class="fas fa-share-alt"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Publicar y compartir</h3>
+                            <p class="text-gray-600">Puedes copiar y compartir el enlace para que tus estudiantes accedan al cuestionario, o asignarlo como tarea con fecha límite desde la plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-rocket text-orange-500 mr-3"></i>Ejemplo Práctico: Uso de Quizizz en Clase</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center"><i class="fas fa-gamepad text-orange-400 mr-2"></i>Modos de juego</h3>
+                        <div class="space-y-4">
+                            <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                                <h4 class="font-bold text-orange-700 mb-2">Modo en vivo (Clásico)</h4>
+                                <p class="text-gray-600">Todos los estudiantes juegan simultáneamente en clase. Similar a Kahoot pero con preguntas que avanzan individualmente.</p>
+                            </div>
+                            <div class="bg-pink-50 p-4 rounded-lg border border-pink-100">
+                                <h4 class="font-bold text-pink-700 mb-2">Modo tarea</h4>
+                                <p class="text-gray-600">Los estudiantes completan el quiz a su propio ritmo antes de una fecha límite. Ideal para aprendizaje asincrónico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center"><i class="fas fa-list-check text-pink-400 mr-2"></i>Tipos de preguntas disponibles</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li><span class="font-semibold">Selección múltiple:</span> Opción tradicional con 2-4 respuestas</li>
+                            <li><span class="font-semibold">Respuesta abierta:</span> Los estudiantes escriben su respuesta</li>
+                            <li><span class="font-semibold">Apareamiento:</span> Relacionar elementos de dos columnas</li>
+                            <li><span class="font-semibold">Dibujo:</span> Responder dibujando en la pantalla</li>
+                            <li><span class="font-semibold">Pregunta con imagen:</span> Usar imágenes como parte de la pregunta</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="quizizz-card text-white p-6 rounded-lg mb-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Pregunta 2/10</h3>
+                            <p class="text-orange-200">Tema: Ciencias Naturales</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>00:15</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 mb-4">
+                        <p class="text-lg font-medium mb-4">¿Cuál de estos roles NO se encuentra en la plataforma Quizizz?</p>
+                        <div class="space-y-3">
+                            <button class="w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-medium py-3 px-4 rounded-lg transition-all text-left flex items-center">
+                                <span class="bg-white bg-opacity-30 rounded-full w-6 h-6 flex items-center justify-center mr-3">A</span>
+                                Profesor
+                            </button>
+                            <button class="w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-medium py-3 px-4 rounded-lg transition-all text-left flex items-center">
+                                <span class="bg-white bg-opacity-30 rounded-full w-6 h-6 flex items-center justify-center mr-3">B</span>
+                                Estudiante
+                            </button>
+                            <button class="w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-medium py-3 px-4 rounded-lg transition-all text-left flex items-center">
+                                <span class="bg-white bg-opacity-30 rounded-full w-6 h-6 flex items-center justify-center mr-3">C</span>
+                                Comerciante
+                            </button>
+                            <button class="w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-medium py-3 px-4 rounded-lg transition-all text-left flex items-center">
+                                <span class="bg-white bg-opacity-30 rounded-full w-6 h-6 flex items-center justify-center mr-3">D</span>
+                                Empresario
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-orange-200 text-sm">
+                        <span>Puntos posibles: 1000</span>
+                        <span>Dificultad: Media</span>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3 flex items-center"><i class="fas fa-lightbulb text-blue-400 mr-2"></i>Actividad de aprendizaje extendido</h3>
+                    <p class="text-gray-600 mb-4">Después de usar Quizizz en clase:</p>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                        <li>Revisa los reportes de desempeño para identificar áreas débiles</li>
+                        <li>Agrupa a los estudiantes por necesidades de aprendizaje similares</li>
+                        <li>Crea estaciones de trabajo para reforzar conceptos difíciles</li>
+                        <li>Asigna un Quizizz de refuerzo como tarea</li>
+                        <li>Programa una sesión de preguntas y respuestas sobre los errores más comunes</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-poll text-orange-500 mr-3"></i>Evaluación sobre Quizizz</h2>
+                <p class="text-gray-600 mb-6">Responde estas preguntas para verificar tu comprensión del tema:</p>
+                
+                <div id="q1-container" class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">1. ¿Cuál de los siguientes roles NO se encuentra en la plataforma Quizizz?</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-a" name="qz-q1" value="a" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q1-a" class="ml-3 text-gray-700">A. Profesor</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-b" name="qz-q1" value="b" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q1-b" class="ml-3 text-gray-700">B. Estudiante</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-c" name="qz-q1" value="c" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q1-c" class="ml-3 text-gray-700">C. Comerciante</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-d" name="qz-q1" value="d" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q1-d" class="ml-3 text-gray-700">D. Empresario</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="q2-container" class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">2. Para que la pregunta que creaste en el cuestionario se guarde al finalizar debes:</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-a" name="qz-q2" value="a" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q2-a" class="ml-3 text-gray-700">A. Dar click en Guardar</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-b" name="qz-q2" value="b" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q2-b" class="ml-3 text-gray-700">B. Dar click en Salvar pregunta</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-c" name="qz-q2" value="c" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q2-c" class="ml-3 text-gray-700">C. Dar click en Publicar</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-d" name="qz-q2" value="d" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q2-d" class="ml-3 text-gray-700">D. Ninguna de las anteriores</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="q3-container" class="p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">3. Con esta herramienta es posible que un alumno conteste el cuestionario desde su dispositivo móvil.</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-true" name="qz-q3" value="true" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q3-true" class="ml-3 text-gray-700">Verdadero</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-false" name="qz-q3" value="false" class="h-4 w-4 text-orange-600 focus:ring-orange-500">
+                            <label for="qz-q3-false" class="ml-3 text-gray-700">Falso</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-between items-center">
+                    <button id="validate-btn" class="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded-lg transition-all flex items-center">
+                        <i class="fas fa-check mr-2"></i>Validar respuestas
+                    </button>
+                    <button id="reset-btn" class="bg-gray-400 hover:bg-gray-500 text-white font-medium py-2 px-6 rounded-lg transition-all flex items-center hidden">
+                        <i class="fas fa-redo mr-2"></i>Reiniciar
+                    </button>
+                </div>
+
+                <div id="result-message" class="mt-8 p-4 rounded-lg text-center font-bold text-lg hidden"></div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-book-open text-orange-500 mr-3"></i>Recursos Adicionales</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-pink-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center"><i class="fas fa-link text-orange-400 mr-2"></i>Enlaces útiles</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://quizizz.com/" target="_blank" class="text-blue-600 hover:underline">Sitio oficial de Quizizz</a></li>
+                            <li><a href="https://quizizz.com/admin" target="_blank" class="text-blue-600 hover:underline">Panel de administración para profesores</a></li>
+                            <li><a href="https://quizizz.com/library" target="_blank" class="text-blue-600 hover:underline">Biblioteca de quizzes públicos</a></li>
+                        </ul>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-orange-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center"><i class="fas fa-video text-pink-400 mr-2"></i>Tutoriales recomendados</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><a href="https://youtu.be/3JwF3ZkQJj4" target="_blank" class="text-blue-600 hover:underline">Guía completa para profesores</a></li>
+                            <li><a href="https://youtu.be/pJThJ8WUQ8E" target="_blank" class="text-blue-600 hover:underline">Cómo crear tu primer quiz</a></li>
+                            <li><a href="https://youtu.be/7KZ4R3Z8Z4Y" target="_blank" class="text-blue-600 hover:underline">Uso de reportes y análisis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-pencil-alt text-orange-500 mr-3"></i>Actividad de Aprendizaje: Bitácora Reflexiva</h2>
+                <p class="text-gray-600 mb-6">Después de explorar las herramientas de Quizizz, por favor completa la siguiente bitácora reflexiva para consolidar tu aprendizaje y compartir tus ideas.</p>
+                
+                <a href="https://forms.gle/2Gf7qfwG51KiqJvT6" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center">
+                    Acceder a la Bitácora Reflexiva 📝
+                </a>
+            </div>
+        </section>
+    </main>
+<!-- Agregar esta sección antes del footer -->
+<section class="py-8 bg-gray-100 mt-16 rounded-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Navegación del Curso</h3>
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center">
+             <a href="kahoot3.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Módulo Anterior (Kahoot)
+            </a>
+           <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Regresar a Principal
+</a>
+            <a href="page.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+                Finalizar Curso
+            </a>
+        </div>
+    </div>
+</section>
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="mb-4">© 2025 MOOC: Quizizz en la Educación</p>
+                <p class="text-gray-400">Este material educativo está diseñado para facilitar la implementación de Quizizz en el proceso de enseñanza-aprendizaje.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // General fade-in animation
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+
+            // Quiz functionality
+            const validateBtn = document.getElementById('validate-btn');
+            const resetBtn = document.getElementById('reset-btn');
+            const resultMessage = document.getElementById('result-message');
+            
+            const questions = {
+                'qz-q1': 'c',
+                'qz-q2': 'b',
+                'qz-q3': 'true'
+            };
+
+            const questionContainers = {
+                'qz-q1': document.getElementById('q1-container'),
+                'qz-q2': document.getElementById('q2-container'),
+                'qz-q3': document.getElementById('q3-container')
+            };
+
+            validateBtn.addEventListener('click', function() {
+                let score = 0;
+                let totalQuestions = Object.keys(questions).length;
+
+                for (const qName in questions) {
+                    const selectedAnswer = document.querySelector(`input[name="${qName}"]:checked`);
+                    const container = questionContainers[qName];
+                    
+                    if (selectedAnswer) {
+                        const isCorrect = selectedAnswer.value === questions[qName];
+                        if (isCorrect) {
+                            score++;
+                            container.classList.remove('bg-gray-50', 'border-gray-200');
+                            container.classList.add('bg-green-100', 'border-green-400');
+                        } else {
+                            container.classList.remove('bg-gray-50', 'border-gray-200');
+                            container.classList.add('bg-red-100', 'border-red-400');
+                        }
+                    } else {
+                        // Mark as incorrect if not answered
+                        container.classList.remove('bg-gray-50', 'border-gray-200');
+                        container.classList.add('bg-red-100', 'border-red-400');
+                    }
+                }
+                
+                resultMessage.classList.remove('hidden');
+                resultMessage.classList.remove('bg-green-100', 'bg-yellow-100', 'bg-red-100');
+                if (score === totalQuestions) {
+                    resultMessage.textContent = `¡Felicidades! Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-green-100');
+                } else if (score > 0) {
+                    resultMessage.textContent = `Buen trabajo. Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-yellow-100');
+                } else {
+                    resultMessage.textContent = `Inténtalo de nuevo. Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-red-100');
+                }
+
+                validateBtn.classList.add('hidden');
+                resetBtn.classList.remove('hidden');
+            });
+
+            resetBtn.addEventListener('click', function() {
+                // Reset colors
+                for (const qName in questionContainers) {
+                    const container = questionContainers[qName];
+                    container.classList.remove('bg-green-100', 'border-green-400', 'bg-red-100', 'border-red-400');
+                    container.classList.add('bg-gray-50', 'border-gray-200');
+                }
+                // Uncheck all radio buttons
+                const radioButtons = document.querySelectorAll('input[type="radio"]');
+                radioButtons.forEach(radio => {
+                    radio.checked = false;
+                });
+                // Hide result message and buttons
+                resultMessage.classList.add('hidden');
+                validateBtn.classList.remove('hidden');
+                resetBtn.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

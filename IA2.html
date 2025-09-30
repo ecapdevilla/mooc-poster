@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Creación de Imágenes con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="bg-green-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+           <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Regresar a Principal
+</a>
+                <span class="text-xl font-bold">Módulo: Imágenes con IA</span>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">MOOC: Creación de Imágenes con IA</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">Aprende a utilizar plataformas de inteligencia artificial para generar imágenes impactantes</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Introducción</h2>
+                <p class="text-gray-600 mb-4">La inteligencia artificial ha revolucionado la creación de imágenes, permitiendo generar recursos visuales personalizados a partir de descripciones textuales o parámetros específicos.</p>
+                <div class="grid md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 transition-all card-hover">
+                        <h3 class="font-bold text-blue-700 mb-2">Educación</h3>
+                        <p class="text-gray-600">Generan recursos visuales que facilitan el aprendizaje</p>
+                    </div>
+                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100 transition-all card-hover">
+                        <h3 class="font-bold text-purple-700 mb-2">Creación de Contenido</h3>
+                        <p class="text-gray-600">Producen imágenes personalizadas rápidamente</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg border border-green-100 transition-all card-hover">
+                        <h3 class="font-bold text-green-700 mb-2">Arte y Diseño</h3>
+                        <p class="text-gray-600">Facilitan la creación de obras visuales innovadoras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Recurso Clave: Video Tutorial</h2>
+                <p class="text-gray-600 mb-6">Mira este video para conocer un top de herramientas de IA para crear imágenes y un ejemplo de cómo utilizarlas.</p>
+                
+                <div class="video-container rounded-lg overflow-hidden mb-8">
+                    <iframe src="https://www.youtube.com/embed/R8W7aWMnVwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">Plataformas Principales</h2>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-blue-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/dalle.png" alt="DALL-E Logo" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">DALL-E</h3>
+                        <p class="text-gray-600 mb-4">Desarrollada por OpenAI, genera imágenes a partir de descripciones textuales complejas.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Generación de imágenes realistas y artísticas</li>
+                            <li class="mb-1">Combina elementos inusuales</li>
+                            <li class="mb-1">Interfaz fácil de usar</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso en educación:</p>
+                        <p class="text-gray-600 mb-4">Crear recursos visuales personalizados para ilustrar conceptos complejos en arte o ciencias.</p>
+                        <a href="https://openai.com/dall-e" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all">Visitar DALL-E</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex md:flex-row-reverse">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-purple-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/Midjourney.jpeg" alt="Midjourney Logo" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Midjourney</h3>
+                        <p class="text-gray-600 mb-4">Plataforma que utiliza IA para crear arte digital a partir de texto con un estilo artístico distintivo.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Enfoque en la creación artística</li>
+                            <li class="mb-1">Ajustes finos en estilo y composición</li>
+                            <li class="mb-1">Comunidad activa</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso en educación:</p>
+                        <p class="text-gray-600 mb-4">Ideal para proyectos creativos donde los estudiantes exploran su creatividad generando arte digital.</p>
+                        <a href="https://www.midjourney.com/" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all">Visitar Midjourney</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-yellow-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/NightCafe.jpeg" alt="NightCafe Logo" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">NightCafe</h3>
+                        <p class="text-gray-600 mb-4">Plataforma que permite crear arte utilizando diferentes algoritmos y estilos.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Múltiples modelos artísticos</li>
+                            <li class="mb-1">Opciones de personalización</li>
+                            <li class="mb-1">Comunidad para compartir obras</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso en educación:</p>
+                        <p class="text-gray-600 mb-4">Útil para aprender sobre diferentes estilos artísticos y técnicas digitales.</p>
+                        <a href="https://nightcafe.studio/" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded-lg transition-all">Visitar NightCafe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex md:flex-row-reverse">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-green-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/Stable%20Diffusion.jpeg" alt="Stable Diffusion Logo" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stable Diffusion</h3>
+                        <p class="text-gray-600 mb-4">Herramienta de código abierto que genera imágenes a partir de texto con alta calidad.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Código abierto para modificaciones</li>
+                            <li class="mb-1">Imágenes detalladas y complejas</li>
+                            <li class="mb-1">Amplia comunidad</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso en educación:</p>
+                        <p class="text-gray-600 mb-4">Fomenta la creatividad al permitir experimentar con generación de imágenes personalizadas.</p>
+                        <a href="https://stability.ai/" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-all">Visitar Stable Diffusion</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all card-hover">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-red-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/phostosonic.jpeg" alt="Photosonic AI Logo" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Photosonic AI</h3>
+                        <p class="text-gray-600 mb-4">Se centra en la creación artística digital mediante descripciones textuales.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Interfaz intuitiva</li>
+                            <li class="mb-1">Genera diversas variantes</li>
+                            <li class="mb-1">Herramientas de edición</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso en educación:</p>
+                        <p class="text-gray-600 mb-4">Ayuda a los estudiantes a expresar ideas visualmente en proyectos creativos.</p>
+                        <a href="https://photosonic.com/" target="_blank" class="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-all">Visitar Photosonic AI</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-gradient-to-r from-green-600 to-blue-600 rounded-xl shadow-md overflow-hidden text-white">
+                <div class="p-8 md:p-12">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6">Aplicación Práctica: Agricultura Sostenible</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Contexto</h3>
+                            <p class="mb-6">En proyectos agropecuarios, las plataformas de IA pueden ser utilizadas por docentes rurales para crear materiales visuales que faciliten la enseñanza sobre prácticas agrícolas sostenibles.</p>
+                            
+                            <h3 class="text-xl font-bold mb-4">Investigación Inicial</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">Rotación de cultivos</li>
+                                <li class="mb-2">Uso eficiente del agua</li>
+                                <li class="mb-2">Control biológico de plagas</li>
+                                <li class="mb-2">Prácticas de conservación del suelo</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Generación de Imágenes</h3>
+                            <p class="mb-4">Utiliza DALL-E o NightCafe para crear imágenes representativas que ilustren estas prácticas.</p>
+                            
+                            <h3 class="text-xl font-bold mb-4">Diseño</h3>
+                            <p class="mb-4">Combina texto e imágenes en Canva, asegurándote de que sea visualmente atractivo y fácil de entender.</p>
+                            
+                            <h3 class="text-xl font-bold mb-4">ODS Relacionados</h3>
+                            <div class="flex space-x-4">
+                                <span class="bg-white text-green-600 font-bold py-1 px-3 rounded-full">2. Hambre Cero</span>
+                                <span class="bg-white text-blue-600 font-bold py-1 px-3 rounded-full">12. Producción Responsable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Recursos Adicionales</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-blue-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bancos de Imágenes Gratuitos</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://unsplash.com/s/photos/sustainable-agriculture" target="_blank" class="text-blue-600 hover:underline">Unsplash - Agricultura Sostenible</a></li>
+                            <li><a href="https://www.pexels.com/search/sustainable%20agriculture/" target="_blank" class="text-blue-600 hover:underline">Pexels - Agricultura Sostenible</a></li>
+                        </ul>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6 transition-all hover:border-purple-300 card-hover">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Referencias Bibliográficas</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>BARRERA, M. (2023). 12 HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL (IA) PARA DISEÑO GRÁFICO.</li>
+                            <li>MOTI. (2023). LAS APLICACIONES DE IA QUE REDEFINEN EL ARTE.</li>
+                            <li>FESPA. (2023). 5 HERRAMIENTAS DE DISEÑO GRÁFICO CON INTELIGENCIA ARTIFICIAL (IA).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Actividad de Aprendizaje: Bitácora Reflexiva</h2>
+                <p class="text-gray-600 mb-6">Después de explorar las herramientas de IA, por favor completa la siguiente bitácora reflexiva para consolidar tu aprendizaje y compartir tus ideas.</p>
+                
+                <a href="https://forms.gle/HD5yvuWH1cvk9os99" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center">
+                    Acceder a la Bitácora Reflexiva 📝
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navegación del Curso</h3>
+                    <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center md:justify-start">
+                        <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all">
+                            ← Regresar al Módulo Principal
+                        </a>
+                        <a href="modulo-videos.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all">
+                            Próximo Módulo →
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 md:mt-0 text-center">
+                    <p class="mb-4">© 2025 MOOC: Creación de Imágenes con IA</p>
+                    <p class="text-gray-400">Este material educativo está diseñado para facilitar el aprendizaje sobre herramientas de IA para generación de imágenes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Videos en la Educación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .step-icon {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-red-600 to-orange-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">
+                <i class="fas fa-video mr-4"></i>MOOC: Videos en la Educación
+            </h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                Aprende a implementar videos efectivos en tus clases y crea contenido educativo atractivo
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Introduction Section -->
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-film text-red-600 mr-3"></i>¿Qué son los videos educativos?
+                </h2>
+                <p class="text-gray-600 mb-6 text-lg">Los videos son medios audiovisuales que combinan imágenes en movimiento, audio y texto para transmitir información de manera visual y atractiva. En el ámbito educativo, se utilizan como herramientas dinámicas para presentar contenido y facilitar el aprendizaje de forma innovadora.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-lg border border-red-100 transition-all card-hover">
+                        <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-2"></i>Beneficios de los videos en educación
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-eye text-red-500 mt-1 mr-3"></i> Facilitan la comprensión mediante ejemplos visuales y auditivos</li>
+                            <li class="flex items-start"><i class="fas fa-list-ol text-red-500 mt-1 mr-3"></i> Muestran instrucciones paso a paso de forma clara</li>
+                            <li class="flex items-start"><i class="fas fa-brain text-red-500 mt-1 mr-3"></i> Enganchan a los estudiantes y hacen el aprendizaje más memorable</li>
+                            <li class="flex items-start"><i class="fas fa-hand-pointer text-red-500 mt-1 mr-3"></i> Involucran a los estudiantes en el contenido de manera interactiva</li>
+                            <li class="flex items-start"><i class="fas fa-globe text-red-500 mt-1 mr-3"></i> Permiten el acceso a recursos en cualquier momento y lugar</li>
+                        </ul>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-100 transition-all card-hover">
+                        <h3 class="text-xl font-bold text-orange-700 mb-4 flex items-center">
+                            <i class="fas fa-list-ul text-orange-600 mr-2"></i>Tipos de videos educativos
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-graduation-cap text-orange-500 mr-3"></i> Tutoriales y demostraciones</li>
+                            <li class="flex items-start"><i class="fas fa-chalkboard-teacher text-orange-500 mr-3"></i> Presentaciones explicativas</li>
+                            <li class="flex items-start"><i class="fas fa-play-circle text-orange-500 mr-3"></i> Lecciones grabadas</li>
+                            <li class="flex items-start"><i class="fas fa-chart-bar text-orange-500 mr-3"></i> Casos de estudio y simulaciones</li>
+                            <li class="flex items-start"><i class="fas fa-question-circle text-orange-500 mr-3"></i> Videos interactivos con preguntas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Tutorial Section -->
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-play-circle text-red-600 mr-3"></i>Recurso Clave: Video Tutorial
+                </h2>
+                <p class="text-gray-600 mb-6 text-lg flex items-center">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i> Aprende a crear y gestionar videos educativos con este tutorial paso a paso.
+                </p>
+                
+                <div class="video-container rounded-lg overflow-hidden mb-8 border-4 border-red-100">
+                    <iframe src="https://www.youtube.com/embed/FxsGJkGYxIk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Guide Section -->
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-cogs text-orange-600 mr-3"></i>Cómo implementar videos en tus clases
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Left Column -->
+                    <div>
+                        <div class="mb-8 bg-white p-6 rounded-lg border-l-4 border-red-500 shadow-sm transition-all card-hover">
+                            <div class="flex items-start">
+                                <div class="step-icon text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Prepara tu video</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i> Verifica que el contenido sea claro y se alinee con tus objetivos</li>
+                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i> Revisa la calidad de imagen y sonido</li>
+                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i> Considera la duración adecuada (5-10 minutos)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8 bg-white p-6 rounded-lg border-l-4 border-red-500 shadow-sm transition-all card-hover">
+                            <div class="flex items-start">
+                                <div class="step-icon text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Planifica el momento adecuado</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-start"><i class="fas fa-play-circle text-blue-500 mt-1 mr-2 text-sm"></i> Al inicio para introducir un tema y generar interés</li>
+                                        <li class="flex items-start"><i class="fas fa-play-circle text-blue-500 mt-1 mr-2 text-sm"></i> En el desarrollo como complemento visual</li>
+                                        <li class="flex items-start"><i class="fas fa-play-circle text-blue-500 mt-1 mr-2 text-sm"></i> Al final para reforzar conceptos clave</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column -->
+                    <div>
+                        <div class="mb-8 bg-white p-6 rounded-lg border-l-4 border-red-500 shadow-sm transition-all card-hover">
+                            <div class="flex items-start">
+                                <div class="step-icon text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <i class="fas fa-tv"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Organiza el equipo de proyección</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-start"><i class="fas fa-check-circle text-purple-500 mt-1 mr-2 text-sm"></i> Verifica que el aula tenga equipo adecuado</li>
+                                        <li class="flex items-start"><i class="fas fa-check-circle text-purple-500 mt-1 mr-2 text-sm"></i> Haz una prueba antes de la clase</li>
+                                        <li class="flex items-start"><i class="fas fa-check-circle text-purple-500 mt-1 mr-2 text-sm"></i> Ten un plan B por si falla la tecnología</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8 bg-white p-6 rounded-lg border-l-4 border-red-500 shadow-sm transition-all card-hover">
+                            <div class="flex items-start">
+                                <div class="step-icon text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Guía la atención y fomenta la discusión</h3>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li class="flex items-start"><i class="fas fa-comment-alt text-green-500 mt-1 mr-2 text-sm"></i> Antes del video, explica su objetivo y da contexto</li>
+                                        <li class="flex items-start"><i class="fas fa-comment-alt text-green-500 mt-1 mr-2 text-sm"></i> Sugiere tomar notas o responder preguntas</li>
+                                        <li class="flex items-start"><i class="fas fa-comment-alt text-green-500 mt-1 mr-2 text-sm"></i> Al finalizar, invita a compartir impresiones</li>
+                                        <li class="flex items-start"><i class="fas fa-comment-alt text-green-500 mt-1 mr-2 text-sm"></i> Usa el video como base para actividades prácticas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-lg p-6 transition-all card-hover">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3 flex items-center">
+                        <i class="fas fa-lightbulb text-blue-400 mr-2"></i>Ejemplo práctico: Clase sobre Ecosistemas
+                    </h3>
+                    <p class="text-gray-600 mb-4">Para una clase sobre ecosistemas, podrías:</p>
+                    <ol class="list-decimal pl-5 space-y-3 text-gray-600">
+                        <li class="flex items-start"><span class="bg-blue-100 text-blue-700 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span> Mostrar un video corto de un documental sobre la selva tropical al inicio</li>
+                        <li class="flex items-start"><span class="bg-blue-100 text-blue-700 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span> Pausar en momentos clave para explicar conceptos</li>
+                        <li class="flex items-start"><span class="bg-blue-100 text-blue-700 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span> Pedir a los estudiantes que identifiquen relaciones ecológicas</li>
+                        <li class="flex items-start"><span class="bg-blue-100 text-blue-700 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">4</span> Finalizar con una discusión sobre cómo aplicar estos conceptos en su localidad</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Creation Platforms Section -->
+        <section class="mb-16 fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center">
+                <i class="fas fa-tools text-red-600 mr-3"></i>Plataformas para crear videos educativos
+            </h2>
+            
+            <!-- Loom -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-purple-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/loom.jpeg" alt="Loom" class="h-full w-full object-cover rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                            <i class="fas fa-desktop text-purple-600 mr-2"></i>Loom
+                        </h3>
+                        <p class="text-gray-600 mb-4">Plataforma en línea que permite grabar la pantalla, la cámara, o ambas, para crear videos de manera rápida y sencilla.</p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start"><i class="fas fa-rocket text-purple-500 mt-1 mr-2"></i> Ideal para tutoriales, presentaciones y retroalimentación</li>
+                            <li class="flex items-start"><i class="fas fa-microphone text-purple-500 mt-1 mr-2"></i> Combina imagen y voz para comunicación visual efectiva</li>
+                            <li class="flex items-start"><i class="fas fa-mouse-pointer text-purple-500 mt-1 mr-2"></i> Interfaz sencilla sin necesidad de software complejo</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2 flex items-center">
+                            <i class="fas fa-chalkboard-teacher text-purple-600 mr-2"></i>Uso educativo:
+                        </p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start"><i class="fas fa-graduation-cap text-purple-400 mr-2"></i> Crear tutoriales sobre temas específicos</li>
+                            <li class="flex items-start"><i class="fas fa-tasks text-purple-400 mr-2"></i> Explicar tareas o proyectos de manera detallada</li>
+                            <li class="flex items-start"><i class="fas fa-comments text-purple-400 mr-2"></i> Dar retroalimentación personalizada en video</li>
+                        </ul>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-700 mb-1 flex items-center">
+                                <i class="fas fa-gift text-purple-600 mr-2"></i>Versión gratuita incluye:
+                            </p>
+                            <ul class="space-y-1 text-gray-600">
+                                <li class="flex items-start"><i class="fas fa-clock text-purple-400 mr-2 text-sm"></i> Grabación de hasta 5 minutos por video</li>
+                                <li class="flex items-start"><i class="fas fa-hd-video text-purple-400 mr-2 text-sm"></i> Resolución máxima de 720p</li>
+                                <li class="flex items-start"><i class="fas fa-cut text-purple-400 mr-2 text-sm"></i> Herramientas de recorte básico</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.loom.com" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>Visitar Loom
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clipchamp -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex md:flex-row-reverse">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-blue-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/Clipchamp.jpeg" alt="Clipchamp" class="h-full w-full object-cover rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                            <i class="fas fa-edit text-blue-600 mr-2"></i>Clipchamp
+                        </h3>
+                        <p class="text-gray-600 mb-4">Plataforma de edición de video que permite crear contenido educativo con aspecto profesional.</p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start"><i class="fas fa-sliders-h text-blue-500 mt-1 mr-2"></i> Amplia gama de herramientas de edición</li>
+                            <li class="flex items-start"><i class="fas fa-star text-blue-500 mt-1 mr-2"></i> Ideal para videos más elaborados</li>
+                            <li class="flex items-start"><i class="fas fa-smile text-blue-500 mt-1 mr-2"></i> Interfaz amigable y fácil de usar</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2 flex items-center">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 mr-2"></i>Uso educativo:
+                        </p>
+                        <ul class="space-y-2 text-gray-600 mb-4">
+                            <li class="flex items-start"><i class="fas fa-presentation text-blue-400 mr-2"></i> Crear presentaciones visualmente atractivas</li>
+                            <li class="flex items-start"><i class="fas fa-film text-blue-400 mr-2"></i> Producir guías o demostraciones con efectos</li>
+                            <li class="flex items-start"><i class="fas fa-puzzle-piece text-blue-400 mr-2"></i> Combinar fragmentos de diferentes clases</li>
+                        </ul>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-700 mb-1 flex items-center">
+                                <i class="fas fa-gift text-blue-600 mr-2"></i>Versión gratuita incluye:
+                            </p>
+                            <ul class="space-y-1 text-gray-600">
+                                <li class="flex items-start"><i class="fas fa-tools text-blue-400 mr-2 text-sm"></i> Herramientas de edición básicas</li>
+                                <li class="flex items-start"><i class="fas fa-hd-video text-blue-400 mr-2 text-sm"></i> Exportación en calidad 720p</li>
+                                <li class="flex items-start"><i class="fas fa-images text-blue-400 mr-2 text-sm"></i> Biblioteca limitada de recursos gratuitos</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.clipchamp.com" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>Visitar Clipchamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Resources Section -->
+        <section class="mb-16 fade-in">
+            <div class="bg-gradient-to-r from-orange-600 to-red-600 rounded-xl shadow-md overflow-hidden text-white p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center">
+                    <i class="fas fa-book-open mr-3"></i>Recursos Adicionales
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-link mr-2"></i>Bancos de videos educativos
+                        </h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://ed.ted.com/" target="_blank" class="underline hover:text-orange-200 flex items-center"><i class="fas fa-external-link-alt mr-2"></i> TED-Ed - Lecciones animadas</a></li>
+                            <li><a href="https://www.khanacademy.org/" target="_blank" class="underline hover:text-orange-200 flex items-center"><i class="fas fa-external-link-alt mr-2"></i> Khan Academy - Videos instructivos</a></li>
+                            <li><a href="https://www.youtube.com/education" target="_blank" class="underline hover:text-orange-200 flex items-center"><i class="fas fa-external-link-alt mr-2"></i> YouTube EDU - Contenido educativo</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>Consejos para mejores videos
+                        </h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Mantén los videos breves y enfocados</li>
+                            <li>Usa imágenes de alta calidad</li>
+                            <li>Asegura buena iluminación y audio claro</li>
+                            <li>Incluye subtítulos para accesibilidad</li>
+                            <li>Termina con una pregunta o actividad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="py-8 bg-gray-100 mt-16 rounded-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-4 text-center flex items-center justify-center">
+                    <i class="fas fa-compass text-red-600 mr-2"></i>Navegación del Curso
+                </h3>
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center">
+                    <a href="IA2.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-6 rounded-lg transition-all text-center flex items-center">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Módulo Anterior (IA Imágenes)
+                    </a>
+                   <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Regresar a Principal
+</a>
+                   <a href="podcasts2.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center flex items-center">
+    Próximo Módulo (Podcasts)
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="mb-4 flex items-center justify-center">
+                    <i class="fas fa-copyright mr-2"></i> 2025 MOOC: Videos en la Educación
+                </p>
+                <p class="text-gray-400">Este material educativo está diseñado para facilitar la implementación efectiva de videos en el proceso de enseñanza-aprendizaje.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

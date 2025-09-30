@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Podcasts en la Educación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .podcast-player {
+            background: linear-gradient(135deg, #6B46C1 0%, #805AD5 100%);
+            border-radius: 12px;
+            padding: 20px;
+            color: white;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .correct-answer {
+            background-color: #d1f7e0 !important;
+            border-color: #38a169 !important;
+        }
+        .incorrect-answer {
+            background-color: #fce7f3 !important;
+            border-color: #e33b91 !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">MOOC: Podcasts en la Educación</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">Aprende a implementar podcasts efectivos en tus clases y crea contenido educativo accesible</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 flex items-center"><i class="fas fa-headphones-alt text-purple-600 mr-3"></i>¿Qué son los podcasts educativos?</h2>
+                <p class="text-gray-600 mb-6">Los podcasts son archivos de audio disponibles en plataformas digitales que permiten transmitir información de forma narrativa, conversacional o explicativa. En educación, se utilizan como recursos versátiles que facilitan el acceso al conocimiento a través de contenidos escuchables.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-4 flex items-center"><i class="fas fa-microphone-alt text-indigo-500 mr-2"></i>Beneficios de los podcasts en educación</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Permiten acceso a contenido adicional de forma práctica</li>
+                            <li>Refuerzan temas mediante explicaciones detalladas</li>
+                            <li>Accesibles en cualquier momento y lugar</li>
+                            <li>Mejoran la comprensión auditiva y pensamiento crítico</li>
+                            <li>Presentan contenido de manera dinámica y motivadora</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg border border-purple-100">
+                        <h3 class="text-xl font-bold text-purple-700 mb-4 flex items-center"><i class="fas fa-list-ul text-purple-500 mr-2"></i>Tipos de podcasts educativos</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Lecciones grabadas</li>
+                            <li>Entrevistas con expertos</li>
+                            <li>Discusiones y debates</li>
+                            <li>Narraciones y cuentos educativos</li>
+                            <li>Resúmenes y repasos de temas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-play-circle text-indigo-500 mr-3"></i>Recurso Clave: Video Tutorial</h2>
+                <p class="text-gray-600 mb-6">Aprende a crear y gestionar tus propios podcasts educativos con este video tutorial.</p>
+                
+                <div class="video-container rounded-lg overflow-hidden mb-8">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_5g1iZiw-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-list-ol text-purple-600 mr-3"></i>Guía paso a paso para implementar podcasts</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                                Selecciona el episodio adecuado
+                            </h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 ml-11">
+                                <li>Elige un podcast corto y relevante que refuerce el tema de la clase</li>
+                                <li>Verifica que el lenguaje y nivel sean adecuados para tus estudiantes</li>
+                                <li>Considera la duración (15-20 minutos ideal para atención en clase)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                                Planifica el momento de escucha
+                            </h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 ml-11">
+                                <li>Como actividad de introducción para generar interés</li>
+                                <li>Durante la clase para desarrollar un tema específico</li>
+                                <li>Al final como reflexión o resumen de lo aprendido</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                                Asegura la calidad del audio
+                            </h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 ml-11">
+                                <li>Prueba los altavoces o sistema de audio del aula</li>
+                                <li>Revisa que el entorno sea adecuado sin distracciones</li>
+                                <li>Ten una versión descargada por si falla la conexión</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                                Facilita la discusión y reflexión
+                            </h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 ml-11">
+                                <li>Ofrece una guía de escucha con conceptos clave a identificar</li>
+                                <li>Organiza una discusión o actividad en grupo después</li>
+                                <li>Anima a relacionar el contenido con el tema de clase</li>
+                                <li>Pide resúmenes o reflexiones por escrito</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3"><i class="fas fa-lightbulb text-blue-400 mr-2"></i>Ejemplo práctico</h3>
+                    <p class="text-gray-600 mb-4">Para una clase sobre historia del arte, podrías:</p>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                        <li>Seleccionar un podcast de 15 minutos sobre la vida de Van Gogh</li>
+                        <li>Pedir a los estudiantes que identifiquen 3 características de su estilo</li>
+                        <li>Pausar en momentos clave para comentar obras mencionadas</li>
+                        <li>Finalizar con una discusión sobre cómo su vida influyó en su arte</li>
+                        <li>Asignar como tarea buscar un cuadro mencionado y analizarlo</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center"><i class="fas fa-podcast text-indigo-500 mr-3"></i>Plataformas para crear podcasts educativos</h2>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-green-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/postcasts.jpeg" alt="Podcasters" class="h-full w-full object-cover rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Podcasters (Spotify)</h3>
+                        <p class="text-gray-600 mb-4">Plataforma gratuita de creación y distribución de podcasts propiedad de Spotify. Permite grabar, editar y publicar directamente desde navegador o móvil.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Ideal para grabaciones sencillas y distribución amplia</li>
+                            <li class="mb-1">Publicación automática en múltiples plataformas</li>
+                            <li class="mb-1">Interfaz intuitiva y fácil de usar</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso educativo:</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Crear podcasts temáticos sobre temas de clase</li>
+                            <li class="mb-1">Compartir entrevistas con expertos</li>
+                            <li class="mb-1">Publicar resúmenes de clases en audio</li>
+                        </ul>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-700 mb-1">Versión gratuita incluye:</p>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li class="mb-1">Grabación y edición ilimitada</li>
+                                <li class="mb-1">Distribución en múltiples plataformas</li>
+                                <li class="mb-1">Almacenamiento en la nube sin límites</li>
+                            </ul>
+                        </div>
+                        <a href="podcaster.spotify.com" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-all"><i class="fas fa-external-link-alt mr-2"></i>Visitar Podcasters</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all card-hover">
+                <div class="md:flex md:flex-row-reverse">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-blue-100 flex items-center justify-center p-6">
+                        <img src="https://raw.githubusercontent.com/ecapdevilla/mis-imagenes-mooc/main/Audacity.jpeg" alt="Audacity" class="h-full w-full object-cover rounded-lg">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Audacity</h3>
+                        <p class="text-gray-600 mb-4">Software gratuito y de código abierto para grabación y edición de audio profesional.</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Herramientas de edición avanzadas</li>
+                            <li class="mb-1">Ideal para podcasts de alta calidad</li>
+                            <li class="mb-1">Requiere algo más de aprendizaje</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mb-2">Uso educativo:</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4">
+                            <li class="mb-1">Crear lecciones de audio profesionales</li>
+                            <li class="mb-1">Producir podcasts con edición avanzada</li>
+                            <li class="mb-1">Optimizar audio eliminando ruidos</li>
+                        </ul>
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-700 mb-1">Versión gratuita incluye:</p>
+                            <ul class="list-disc pl-5 text-gray-600">
+                                <li class="mb-1">Grabación y edición sin límites</li>
+                                <li class="mb-1">Acceso completo a herramientas profesionales</li>
+                                <li class="mb-1">Exportación en múltiples formatos</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.audacityteam.org/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all"><i class="fas fa-external-link-alt mr-2"></i>Visitar Audacity</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-play text-indigo-500 mr-3"></i>Ejemplo de Podcast Educativo</h2>
+                <p class="text-gray-600 mb-6">Escucha este ejemplo de cómo podría ser un podcast educativo creado con estas herramientas:</p>
+                
+                <div class="podcast-player mb-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-indigo-300 rounded-lg mr-4 flex-shrink-0"></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Lección sobre Ecosistemas</h3>
+                            <p class="text-indigo-200">Profesor Carlos Martínez | 12 min</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-indigo-200 text-sm">0:00</span>
+                        <div class="flex-1 mx-4 bg-indigo-400 rounded-full h-2">
+                            <div class="bg-white h-2 rounded-full w-1/3"></div>
+                        </div>
+                        <span class="text-indigo-200 text-sm">12:45</span>
+                    </div>
+                    <div class="flex justify-center space-x-6">
+                        <button class="text-white hover:text-indigo-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="bg-white text-indigo-600 rounded-full p-3 hover:bg-indigo-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                        <button class="text-white hover:text-indigo-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-3 flex items-center"><i class="fas fa-volume-up text-indigo-400 mr-2"></i>Elementos efectivos en este podcast</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Duración adecuada (10-15 minutos)</li>
+                            <li>Voz clara y entusiasta</li>
+                            <li>Estructura lógica: introducción, desarrollo, conclusión</li>
+                            <li>Preguntas para reflexión incluidas</li>
+                            <li>Sonidos ambientales relevantes</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg border border-purple-100">
+                        <h3 class="text-xl font-bold text-purple-700 mb-3 flex items-center"><i class="fas fa-chalkboard-teacher text-purple-400 mr-2"></i>Cómo usar este podcast en clase</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Asignar como material previo a la clase</li>
+                            <li>Usar como base para discusión en grupo</li>
+                            <li>Pedir resúmenes o mapas conceptuales</li>
+                            <li>Crear cuestionarios basados en el contenido</li>
+                            <li>Motivar a estudiantes a crear sus propios podcasts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-poll text-purple-600 mr-3"></i>Evaluación sobre Podcasts Educativos</h2>
+                <p class="text-gray-600 mb-6">Responde estas preguntas para verificar tu comprensión del tema:</p>
+                
+                <div id="q1-container" class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">1. Según el tutorial, ¿cuál de estas herramientas se utiliza para grabar la voz antes de subirla a la plataforma?</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-a" name="qz-q1" value="a" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q1-a" class="ml-3 text-gray-700">A. Audacity</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-b" name="qz-q1" value="b" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q1-b" class="ml-3 text-gray-700">B. Onlineboccorder.com</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-c" name="qz-q1" value="c" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q1-c" class="ml-3 text-gray-700">C. Google Docs</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q1-d" name="qz-q1" value="d" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q1-d" class="ml-3 text-gray-700">D. Powerpoint</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="q2-container" class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">2. Una de las principales ventajas de los podcasts educativos es que:</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-a" name="qz-q2" value="a" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q2-a" class="ml-3 text-gray-700">A. Son más fáciles de hacer que un video.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-b" name="qz-q2" value="b" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q2-b" class="ml-3 text-gray-700">B. Refuerzan temas mediante explicaciones detalladas.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-c" name="qz-q2" value="c" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q2-c" class="ml-3 text-gray-700">C. Permiten hacer cuestionarios interactivos.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q2-d" name="qz-q2" value="d" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q2-d" class="ml-3 text-gray-700">D. Se usan para hacer debates en grupo.</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="q3-container" class="p-6 bg-gray-50 rounded-lg border border-gray-200 transition-all">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">3. ¿Qué paso sigue después de grabar el audio de un podcast, según el video?</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-a" name="qz-q3" value="a" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q3-a" class="ml-3 text-gray-700">A. Publicarlo en Spotify sin editar.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-b" name="qz-q3" value="b" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q3-b" class="ml-3 text-gray-700">B. Descargar el archivo MP3 y subirlo a Podcasters.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-c" name="qz-q3" value="c" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q3-c" class="ml-3 text-gray-700">C. Subirlo a una plataforma de video.</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="qz-q3-d" name="qz-q3" value="d" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                            <label for="qz-q3-d" class="ml-3 text-gray-700">D. Enviarlo por correo a los estudiantes.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-between items-center">
+                    <button id="validate-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition-all flex items-center">
+                        <i class="fas fa-check mr-2"></i>Validar respuestas
+                    </button>
+                    <button id="reset-btn" class="bg-gray-400 hover:bg-gray-500 text-white font-medium py-2 px-6 rounded-lg transition-all flex items-center hidden">
+                        <i class="fas fa-redo mr-2"></i>Reiniciar
+                    </button>
+                </div>
+
+                <div id="result-message" class="mt-8 p-4 rounded-lg text-center font-bold text-lg hidden"></div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl shadow-md overflow-hidden text-white p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center"><i class="fas fa-book-open mr-3"></i>Recursos Adicionales</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Plataformas de podcasts educativos</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.bbc.co.uk/sounds" target="_blank" class="underline hover:text-purple-200">BBC Sounds - Documentales educativos</a></li>
+                            <li><a href="https://www.ted.com/podcasts" target="_blank" class="underline hover:text-purple-200">TED Podcasts - Ideas inspiradoras</a></li>
+                            <li><a href="https://www.ivoox.com/podcast-educacion_sq_f1157431_1.html" target="_blank" class="underline hover:text-purple-200">iVoox - Podcasts de educación</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Consejos para mejores podcasts</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Prepara un guión o esquema antes de grabar</li>
+                            <li>Usa un micrófono decente para mejor calidad</li>
+                            <li>Elige un lugar silencioso para grabar</li>
+                            <li>Habla claro y con entusiasmo</li>
+                            <li>Incluye pausas y cambios de tono</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-pencil-alt text-indigo-500 mr-3"></i>Actividad de Aprendizaje: Bitácora Reflexiva</h2>
+                <p class="text-gray-600 mb-6">Después de explorar las herramientas de creación de podcasts, por favor completa la siguiente bitácora reflexiva para consolidar tu aprendizaje y compartir tus ideas.</p>
+                
+                <a href="https://forms.gle/EDRYtmBDjPTe8X9n8" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center"><i class="fas fa-clipboard-list mr-2"></i>Acceder a la Bitácora Reflexiva</a>
+            </div>
+        </section>
+        
+        <section class="py-8 bg-gray-100 mt-16 rounded-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Navegación del Curso</h3>
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center">
+               <a href="modulo-videos.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    <i class="fas fa-arrow-left mr-2"></i>
+    Módulo Anterior (Videos)
+</a>
+                   <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Regresar a Principal
+</a>
+              <a href="geneally2.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Próximo Módulo (Genially)
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="mb-4">© 2025 MOOC: Podcasts en la Educación</p>
+                <p class="text-gray-400">Este material educativo está diseñado para facilitar la implementación efectiva de podcasts en el proceso de enseñanza-aprendizaje.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // General fade-in animation
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+
+            // Quiz functionality
+            const validateBtn = document.getElementById('validate-btn');
+            const resetBtn = document.getElementById('reset-btn');
+            const resultMessage = document.getElementById('result-message');
+            
+            const questions = {
+                'qz-q1': 'b',
+                'qz-q2': 'b',
+                'qz-q3': 'b'
+            };
+
+            const questionContainers = {
+                'qz-q1': document.getElementById('q1-container'),
+                'qz-q2': document.getElementById('q2-container'),
+                'qz-q3': document.getElementById('q3-container')
+            };
+
+            validateBtn.addEventListener('click', function() {
+                let score = 0;
+                let totalQuestions = Object.keys(questions).length;
+
+                for (const qName in questions) {
+                    const selectedAnswer = document.querySelector(`input[name="${qName}"]:checked`);
+                    const container = questionContainers[qName];
+                    
+                    if (selectedAnswer) {
+                        const isCorrect = selectedAnswer.value === questions[qName];
+                        if (isCorrect) {
+                            score++;
+                            container.classList.remove('bg-gray-50', 'border-gray-200');
+                            container.classList.add('correct-answer');
+                        } else {
+                            container.classList.remove('bg-gray-50', 'border-gray-200');
+                            container.classList.add('incorrect-answer');
+                        }
+                    } else {
+                        // Mark as incorrect if not answered
+                        container.classList.remove('bg-gray-50', 'border-gray-200');
+                        container.classList.add('incorrect-answer');
+                    }
+                }
+                
+                resultMessage.classList.remove('hidden');
+                resultMessage.classList.remove('bg-green-100', 'bg-yellow-100', 'bg-red-100');
+                if (score === totalQuestions) {
+                    resultMessage.textContent = `¡Felicidades! Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-green-100');
+                } else if (score > 0) {
+                    resultMessage.textContent = `Buen trabajo. Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-yellow-100');
+                } else {
+                    resultMessage.textContent = `Inténtalo de nuevo. Obtuviste ${score} de ${totalQuestions} respuestas correctas.`;
+                    resultMessage.classList.add('bg-red-100');
+                }
+
+                validateBtn.classList.add('hidden');
+                resetBtn.classList.remove('hidden');
+            });
+
+            resetBtn.addEventListener('click', function() {
+                // Reset colors
+                for (const qName in questionContainers) {
+                    const container = questionContainers[qName];
+                    container.classList.remove('correct-answer', 'incorrect-answer');
+                    container.classList.add('bg-gray-50', 'border-gray-200');
+                }
+                // Uncheck all radio buttons
+                const radioButtons = document.querySelectorAll('input[type="radio"]');
+                radioButtons.forEach(radio => {
+                    radio.checked = false;
+                });
+                // Hide result message and buttons
+                resultMessage.classList.add('hidden');
+                validateBtn.classList.remove('hidden');
+                resetBtn.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

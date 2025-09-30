@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC: Genially en la Educación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .step-card {
+            border-left: 4px solid #7C3AED;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="bg-green-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="page.html" class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <span class="text-xl font-bold">Página Principal</span>
+                </a>
+                <span class="text-xl font-bold">Módulo: Genially</span>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">MOOC: Creación de Contenidos Interactivos con Genially</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">Aprende a crear materiales educativos interactivos y atractivos para tus clases</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">¿Qué es Genially?</h2>
+                <p class="text-gray-600 mb-6">Genially es una herramienta digital que permite crear contenidos interactivos y animados para la educación. Facilita la creación de presentaciones, infografías, juegos y otros recursos educativos dinámicos que captan la atención de los estudiantes.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-fuchsia-50 p-6 rounded-lg border border-fuchsia-100">
+                        <h3 class="text-xl font-bold text-fuchsia-700 mb-4">Beneficios de Genially en educación</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Crea materiales interactivos que aumentan el engagement</li>
+                            <li>Permite integrar multimedia (videos, imágenes, audio)</li>
+                            <li>Facilita la explicación de conceptos complejos</li>
+                            <li>Ofrece plantillas educativas listas para usar</li>
+                            <li>Posibilita el trabajo colaborativo entre docentes</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg border border-purple-100">
+                        <h3 class="text-xl font-bold text-purple-700 mb-4">Usos comunes en el aula</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Presentaciones interactivas de temas</li>
+                            <li>Infografías animadas</li>
+                            <li>Juegos educativos y quizzes</li>
+                            <li>Portafolios digitales</li>
+                            <li>Guías de estudio interactivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Recurso Clave: Video Tutorial</h2>
+                <p class="text-gray-600 mb-6">Mira este video para una explicación detallada sobre cómo usar Genially en la práctica académica. Se muestran ejemplos y consejos útiles para empezar.</p>
+                
+                <div class="bg-gray-200 rounded-lg overflow-hidden mb-8" style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/QAawy9BD8t0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Guía paso a paso para crear contenido en Genially</h2>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Registrarse</h3>
+                            <p class="text-gray-600 mb-2">Abrir una cuenta en la plataforma usando un email (preferiblemente Google). Una vez registrado obtendrás usuario y clave para ingresar.</p>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-700">Tip: Puedes registrarte a través de Google, Facebook o Instagram.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Seleccionar rol</h3>
+                            <p class="text-gray-600">Es importante seleccionar el rol de EDUCACIÓN y completar la información correspondiente al nivel educativo donde te desempeñas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Planificar</h3>
+                            <p class="text-gray-600">Ten claro qué herramienta digital deseas crear para tu clase y prepara los archivos y elementos que vas a incluir en Genially.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-content-center flex-shrink-0 mr-4 mt-1">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Escoger plantilla</h3>
+                            <p class="text-gray-600 mb-2">Explora las plantillas que ofrece Genially y elige la que más se adapte a tu necesidad. Recuerda que algunas son de pago.</p>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <p class="text-sm font-medium text-gray-700">Tip: Filtra por "Educación" para encontrar plantillas diseñadas específicamente para docentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">5</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Crear</h3>
+                            <p class="text-gray-600">En el menú izquierdo encontrarás las opciones para personalizar la plantilla: cambiar colores, añadir texto, insertar imágenes, videos y elementos interactivos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 mb-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">6</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Guardar y descargar</h3>
+                            <p class="text-gray-600">Genially guarda automáticamente tu creación. Cuando esté lista, haz clic en "Compartir" (esquina superior derecha) y selecciona si será público o privado. Puedes descargarla en formatos como PDF o imagen.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card bg-white p-6 rounded-lg shadow-sm transition-all card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-fuchsia-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">7</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Publicar y compartir</h3>
+                            <p class="text-gray-600">Puedes copiar y compartir el enlace o invitar a colaboradores por correo electrónico para que puedan ver o editar tu creación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Ejemplo Práctico: Clase sobre Partes de la Planta</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cómo usar Genially para este tema</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Crear una presentación interactiva con imágenes de plantas</li>
+                            <li>Insertar un video sobre germinación de semillas</li>
+                            <li>Añadir hotspots interactivos en las partes de la planta</li>
+                            <li>Incluir un quiz de autoevaluación</li>
+                            <li>Compartir el enlace con los estudiantes</li>
+                        </ul>
+                    </div>
+                    <div class="bg-fuchsia-50 p-6 rounded-lg border border-fuchsia-100">
+                        <h3 class="text-xl font-bold text-fuchsia-700 mb-3">Elementos interactivos clave</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Botones para mostrar/ocultar información</li>
+                            <li>Animaciones al hacer hover sobre partes de la planta</li>
+                            <li>Transiciones entre slides</li>
+                            <li>Cuestionario integrado con retroalimentación</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3">Actividad de aprendizaje</h3>
+                    <p class="text-gray-600 mb-4">Después de mostrar la presentación:</p>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                        <li>Pide a los estudiantes que identifiquen las partes de una planta real usando lo aprendido</li>
+                        <li>Organiza equipos para que creen su propia infografía en Genially sobre otro tema relacionado</li>
+                        <li>Realiza una exposición de los trabajos creados por los estudiantes</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Evaluación sobre Genially</h2>
+                <p class="text-gray-600 mb-6">Responde estas preguntas para verificar tu comprensión del tema:</p>
+                
+                <div class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">1. Para registrarse en la plataforma de Genially se puede hacer a través de:</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="q1-a" name="q1" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q1-a" class="ml-3 text-gray-700">A. Instagram</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q1-b" name="q1" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q1-b" class="ml-3 text-gray-700">B. Google</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q1-c" name="q1" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q1-c" class="ml-3 text-gray-700">C. Facebook</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q1-d" name="q1" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q1-d" class="ml-3 text-gray-700">D. Todas las anteriores</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">2. Si deseas insertar un video en tu presentación interactiva, ¿qué opción del menú de Genially debes usar?</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="q2-a" name="q2" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q2-a" class="ml-3 text-gray-700">A. Imagen</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q2-b" name="q2" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q2-b" class="ml-3 text-gray-700">B. Recursos</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q2-c" name="q2" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q2-c" class="ml-3 text-gray-700">C. Elementos interactivos</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q2-d" name="q2" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q2-d" class="ml-3 text-gray-700">D. Fondo</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">3. En un aula de clase es posible que el docente esté explicando las partes de la planta y en la misma presentación les muestre un video sobre el proceso de germinación de la semilla.</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="radio" id="q3-true" name="q3" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q3-true" class="ml-3 text-gray-700">Verdadero</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="q3-false" name="q3" class="h-4 w-4 text-fuchsia-600 focus:ring-fuchsia-500">
+                            <label for="q3-false" class="ml-3 text-gray-700">Falso</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="mt-6 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-medium py-2 px-6 rounded-lg transition-all">
+                    Verificar respuestas
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-16 fade-in">
+            <div class="bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-xl shadow-md overflow-hidden text-white p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">Recursos Adicionales</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Enlaces útiles</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.genially.com/" target="_blank" class="underline hover:text-purple-200">Sitio oficial de Genially</a></li>
+                            <li><a href="https://academy.genially.com/" target="_blank" class="underline hover:text-purple-200">Genially Academy (cursos y tutoriales)</a></li>
+                            <li><a href="https://www.genially.com/es/templates/education/" target="_blank" class="underline hover:text-purple-200">Plantillas educativas gratuitas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Consejos para mejores Geniallys</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Planifica tu contenido antes de empezar a diseñar</li>
+                            <li>Usa la interactividad para hacerlo más engaging</li>
+                            <li>Mantén un diseño limpio y consistente</li>
+                            <li>Combina texto con elementos visuales</li>
+                            <li>Prueba siempre tu creación antes de compartirla</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16 fade-in">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all hover:shadow-lg">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Actividad de Aprendizaje: Bitácora Reflexiva</h2>
+                <p class="text-gray-600 mb-6">Después de ver el video y explorar la herramienta, por favor completa la siguiente bitácora reflexiva para consolidar tu aprendizaje y compartir tus ideas.</p>
+                
+                <a href="https://forms.gle/9Ac1NHCPTiv17ahm8" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all text-center">
+                    Acceder a la Bitácora Reflexiva 📝
+                </a>
+            </div>
+        </section>
+
+        <section class="py-8 bg-gray-100 mt-16 rounded-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Navegación del Curso</h3>
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 justify-center">
+                  <a href="podcasts2.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block -mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+    Módulo Anterior (Podcasts)
+</a>
+                    <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block -mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        Regresar a Principal
+                  <a href="kahoot3.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all text-center">
+    Próximo Módulo (Kahoot)
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block -mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <p class="mb-4">© 2025 MOOC: Genially en la Educación</p>
+                <p class="text-gray-400">Este material educativo está diseñado para facilitar la creación de contenidos interactivos con Genially.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+
+            // Quiz verification (basic example)
+            const checkAnswersBtn = document.querySelector('button[type="button"]');
+            if(checkAnswersBtn) {
+                checkAnswersBtn.addEventListener('click', function() {
+                    // This alert has been removed to avoid revealing answers directly.
+                    // alert('Respuesta correcta: 1-D, 2-C, 3-Verdadero');
+                    alert('Gracias por intentar. ¡Sigue aprendiendo!');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
