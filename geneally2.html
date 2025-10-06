@@ -272,9 +272,10 @@
                     </div>
                 </div>
                 
-                <button class="mt-6 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-medium py-2 px-6 rounded-lg transition-all">
+              <button type="button" class="mt-6 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-medium py-2 px-6 rounded-lg transition-all">
                     Verificar respuestas
                 </button>
+
             </div>
         </section>
 
@@ -352,32 +353,26 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const fadeInObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
-                        fadeInObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            fadeElements.forEach(element => {
-                fadeInObserver.observe(element);
-            });
+    const checkAnswersBtn = document.querySelector('button[type="button"]');
 
-            // Quiz verification (basic example)
-            const checkAnswersBtn = document.querySelector('button[type="button"]');
-            if(checkAnswersBtn) {
-                checkAnswersBtn.addEventListener('click', function() {
-                    // This alert has been removed to avoid revealing answers directly.
-                    // alert('Respuesta correcta: 1-D, 2-C, 3-Verdadero');
-                    alert('Gracias por intentar. ¡Sigue aprendiendo!');
-                });
-            }
-        });
+    checkAnswersBtn.addEventListener('click', function() {
+        let score = 0;
+
+        // Pregunta 1 (correcta = D)
+        if(document.getElementById("q1-d").checked) score++;
+
+        // Pregunta 2 (correcta = C)
+        if(document.getElementById("q2-c").checked) score++;
+
+        // Pregunta 3 (correcta = Verdadero)
+        if(document.getElementById("q3-true").checked) score++;
+
+        alert("Tu puntaje es: " + score + " de 3");
+    });
+});
+
     </script>
 </body>
 
 </html>
+
